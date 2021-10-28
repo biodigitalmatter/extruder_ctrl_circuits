@@ -1,0 +1,2 @@
+(sym_lib_table    (lib (name archive)(type Legacy)(uri "${KIPRJMOD}/extruder_controll-archive.lib")(options "")(descr ""))
+)
