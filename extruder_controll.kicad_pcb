@@ -1327,8 +1327,8 @@
   (segment (start 146.052666 110.363) (end 144.274666 108.585) (width 0.3) (layer F.Cu) (net 13))
   (segment (start 155.693333 110.363) (end 146.052666 110.363) (width 0.3) (layer F.Cu) (net 13))
   (segment (start 160.031333 106.025) (end 155.693333 110.363) (width 0.3) (layer F.Cu) (net 13))
-  (segment (start 148.488 103.485) (end 152.411333 103.485) (width 0.3) (layer F.Cu) (net 14))
-  (segment (start 144.274666 99.271666) (end 148.488 103.485) (width 0.3) (layer F.Cu) (net 14))
+  (segment (start 148.197999 99.271666) (end 152.411333 103.485) (width 0.25) (layer F.Cu) (net 14))
+  (segment (start 144.274666 99.271666) (end 148.197999 99.271666) (width 0.25) (layer F.Cu) (net 14))
 
   (zone (net 15) (net_name 0V) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
