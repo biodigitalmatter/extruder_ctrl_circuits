@@ -52,7 +52,7 @@ U 1 1 6179C469
 P 8250 3100
 F 0 "CONN_IRC5" V 8312 3244 50  0000 L CNN
 F 1 "Conn_01x04_Male" V 8403 3244 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0418_2x02-1MP_P3.00mm_Vertical" H 8250 3100 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 8250 3100 50  0001 C CNN
 F 3 "~" H 8250 3100 50  0001 C CNN
 	1    8250 3100
 	0    1    1    0   
@@ -107,7 +107,7 @@ U 1 1 61ADB21D
 P 4750 7350
 F 0 "CONN_DRIVER1" V 4904 6962 50  0000 R CNN
 F 1 "Conn_01x06_Male" V 4813 6962 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0618_2x03-1MP_P3.00mm_Vertical" H 4750 7350 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 4750 7350 50  0001 C CNN
 F 3 "~" H 4750 7350 50  0001 C CNN
 	1    4750 7350
 	0    -1   -1   0   
@@ -399,7 +399,7 @@ U 1 1 61F8F114
 P 4750 500
 F 0 "CONN_CONTROLLER1" V 5050 -100 50  0000 C CNN
 F 1 "Conn_01x08_Male" V 4950 -300 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0818_2x04-1MP_P3.00mm_Vertical" H 4750 500 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0812_2x04_P3.00mm_Vertical" H 4750 500 50  0001 C CNN
 F 3 "~" H 4750 500 50  0001 C CNN
 	1    4750 500 
 	0    1    1    0   
