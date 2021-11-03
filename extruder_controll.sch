@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L archive:Motor_Stepper_Motor_bipolar M1
+L archive:project_Motor_Stepper_Motor_bipolar M1
 U 1 1 6125B4DE
 P 10750 3650
 F 0 "M1" H 10938 3774 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarSte
 	1    0    0    -1  
 $EndComp
 $Comp
-L archive:MotionKing_2L415B U1
+L archive:project_MotionKing_2L415B U1
 U 1 1 61751CFD
 P 9800 3500
 F 0 "U1" H 10050 4350 50  0000 R CNN
@@ -36,18 +36,18 @@ F 3 "http://www.motionking.com/download/2L415B_Instruction_Rev.E.pdf" H 9850 325
 	1    0    0    -1  
 $EndComp
 $Comp
-L archive:Connector_Conn_01x04_Male J1
+L archive:project_Connector_Conn_01x04_Male J1
 U 1 1 6179C469
 P 4450 1250
 F 0 "J1" V 4200 1050 50  0000 L CNN
 F 1 "Conn_01x04_Male" V 4300 950 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 4450 1250 50  0001 C CNN
+F 2 "project:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical" H 4450 1250 50  0001 C CNN
 F 3 "~" H 4450 1250 50  0001 C CNN
 	1    4450 1250
 	0    1    1    0   
 $EndComp
 $Comp
-L archive:DSQC652 #A01
+L archive:project_DSQC652 #A01
 U 1 1 6175C937
 P 2000 2700
 F 0 "#A01" H 2050 2800 50  0000 C CNN
@@ -58,7 +58,7 @@ F 3 "https://abb.sluzba.cz/Pages/Public/IRC5RoboticsDocumentationRW6/Controllers
 	1    0    0    -1  
 $EndComp
 $Comp
-L archive:MCU_Module_Arduino_UNO_R3 A2
+L archive:project_MCU_Module_Arduino_UNO_R3 A2
 U 1 1 61256B6D
 P 7900 3750
 F 0 "A2" H 8250 4800 50  0000 L CNN
@@ -68,21 +68,19 @@ F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 7900 3750 50  0001 C CNN
 	1    7900 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 1500 6800 1600
 $Comp
-L archive:Connector_Conn_01x08_Male J2
+L archive:project_Connector_Conn_01x08_Male J2
 U 1 1 61F8F114
 P 6800 1300
 F 0 "J2" V 6500 1300 50  0000 C CNN
 F 1 "Conn_01x08_Male" V 6600 1300 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0812_2x04_P3.00mm_Vertical" H 6800 1300 50  0001 C CNN
+F 2 "project:Molex_Micro-Fit_3.0_43045-0812_2x04_P3.00mm_Vertical" H 6800 1300 50  0001 C CNN
 F 3 "~" H 6800 1300 50  0001 C CNN
 	1    6800 1300
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 617D7702
 P 1650 1350
 F 0 "#PWR?" H 1650 1100 50  0001 C CNN
@@ -95,7 +93,7 @@ $EndComp
 Wire Wire Line
 	1650 1050 1650 950 
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 617E5604
 P 4550 1650
 F 0 "#PWR?" H 4550 1400 50  0001 C CNN
@@ -108,7 +106,7 @@ $EndComp
 Wire Wire Line
 	4450 1450 4450 1550
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 61809311
 P 9800 4900
 F 0 "#PWR?" H 9800 4650 50  0001 C CNN
@@ -119,7 +117,7 @@ F 3 "" H 9800 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L archive:power_+5V #PWR?
 U 1 1 61810BBF
 P 9750 2750
 F 0 "#PWR?" H 9750 2600 50  0001 C CNN
@@ -130,7 +128,7 @@ F 3 "" H 9750 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L archive:power_+5V #PWR?
 U 1 1 61815DEB
 P 7800 2750
 F 0 "#PWR?" H 7800 2600 50  0001 C CNN
@@ -141,7 +139,7 @@ F 3 "" H 7800 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR?
+L archive:power_+24V #PWR?
 U 1 1 618194C5
 P 1650 800
 F 0 "#PWR?" H 1650 650 50  0001 C CNN
@@ -152,18 +150,18 @@ F 3 "" H 1650 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR?
+L archive:power_+24V #PWR?
 U 1 1 6181D67C
-P 4700 1550
-F 0 "#PWR?" H 4700 1400 50  0001 C CNN
-F 1 "+24V" H 4715 1723 50  0000 C CNN
-F 2 "" H 4700 1550 50  0001 C CNN
-F 3 "" H 4700 1550 50  0001 C CNN
-	1    4700 1550
+P 4000 1550
+F 0 "#PWR?" H 4000 1400 50  0001 C CNN
+F 1 "+24V" H 4015 1723 50  0000 C CNN
+F 2 "" H 4000 1550 50  0001 C CNN
+F 3 "" H 4000 1550 50  0001 C CNN
+	1    4000 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 61832CF1
 P 7100 1600
 F 0 "#PWR?" H 7100 1350 50  0001 C CNN
@@ -174,7 +172,7 @@ F 3 "" H 7100 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L archive:power_+5V #PWR?
 U 1 1 61833500
 P 6200 1550
 F 0 "#PWR?" H 6200 1400 50  0001 C CNN
@@ -191,7 +189,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 5250 1200 5350
 $Comp
-L power:+24V #PWR?
+L archive:power_+24V #PWR?
 U 1 1 619E3938
 P 1200 5250
 F 0 "#PWR?" H 1200 5100 50  0001 C CNN
@@ -202,18 +200,18 @@ F 3 "" H 1200 5250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:CP C1
+L archive:Device_CP C1
 U 1 1 617FDB58
 P 3100 5600
 F 0 "C1" H 3218 5646 50  0000 L CNN
 F 1 "22 µF" H 3218 5555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3138 5450 50  0001 C CNN
+F 2 "project:CP_Radial_D6.3mm_P2.50mm" H 3138 5450 50  0001 C CNN
 F 3 "~" H 3100 5600 50  0001 C CNN
 	1    3100 5600
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 617FD499
 P 3100 5950
 F 0 "#PWR?" H 3100 5700 50  0001 C CNN
@@ -224,12 +222,12 @@ F 3 "" H 3100 5950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L archive:R-78B5.0-1.0 PS1
+L archive:project_R-78B5.0-1.0 PS1
 U 1 1 6189B322
 P 1950 5250
 F 0 "PS1" H 1950 4883 50  0000 C CNN
 F 1 "R-78B5.0-1.0" H 1950 4974 50  0000 C CNN
-F 2 "kicad:CONV_R-78B5.0-1.0" H 1950 5250 50  0001 L BNN
+F 2 "project:R-78B5.0-1.0" H 1950 5250 50  0001 L BNN
 F 3 "" H 1950 5250 50  0001 L BNN
 F 4 "RECOM" H 1950 5250 50  0001 L BNN "MANUFACTURER"
 F 5 "4/2019" H 1950 5250 50  0001 L BNN "PARTREV"
@@ -239,7 +237,7 @@ F 7 "Manufacturer Recommendations" H 1950 5250 50  0001 L BNN "STANDARD"
 	1    0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L archive:power_+5V #PWR?
 U 1 1 61A134D1
 P 3100 5250
 F 0 "#PWR?" H 3100 5100 50  0001 C CNN
@@ -268,18 +266,18 @@ Wire Wire Line
 	3100 5250 3100 5350
 Connection ~ 3100 5350
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 61A6B0A7
-P 9400 1600
-F 0 "#PWR?" H 9400 1350 50  0001 C CNN
-F 1 "GND" H 9405 1427 50  0000 C CNN
-F 2 "" H 9400 1600 50  0001 C CNN
-F 3 "" H 9400 1600 50  0001 C CNN
-	1    9400 1600
+P 9350 1600
+F 0 "#PWR?" H 9350 1350 50  0001 C CNN
+F 1 "GND" H 9355 1427 50  0000 C CNN
+F 2 "" H 9350 1600 50  0001 C CNN
+F 3 "" H 9350 1600 50  0001 C CNN
+	1    9350 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L archive:power_+5V #PWR?
 U 1 1 61B167ED
 P 8450 1550
 F 0 "#PWR?" H 8450 1400 50  0001 C CNN
@@ -290,7 +288,7 @@ F 3 "" H 8450 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR?
+L archive:power_+24V #PWR?
 U 1 1 61B170C5
 P 8700 1550
 F 0 "#PWR?" H 8700 1400 50  0001 C CNN
@@ -301,29 +299,19 @@ F 3 "" H 8700 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 1550 8700 1700
-Wire Wire Line
-	8700 1700 8900 1700
+	8700 1550 8700 1650
 Wire Wire Line
 	8450 1550 8450 1750
-Wire Wire Line
-	8450 1750 9100 1750
-Wire Wire Line
-	6600 1500 6600 2100
-Wire Wire Line
-	6700 1500 6700 2000
-Connection ~ 9100 2100
-Connection ~ 9200 2000
 Wire Wire Line
 	7100 1500 7100 1600
 Wire Wire Line
 	6200 1550 6200 1600
 Wire Wire Line
-	6200 1600 6800 1600
+	6200 1600 6400 1600
 Wire Wire Line
-	4700 1550 4450 1550
+	4000 1550 4450 1550
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 61C8C22F
 P 8000 4900
 F 0 "#PWR?" H 8000 4650 50  0001 C CNN
@@ -334,7 +322,7 @@ F 3 "" H 8000 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR?
+L archive:power_+24V #PWR?
 U 1 1 61C9A333
 P 9850 2550
 F 0 "#PWR?" H 9850 2400 50  0001 C CNN
@@ -345,12 +333,12 @@ F 3 "" H 9850 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C2
+L archive:Device_CP C2
 U 1 1 617B6ABB
 P 1650 1200
 F 0 "C2" H 1768 1246 50  0000 L CNN
 F 1 "22 µF" H 1768 1155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1688 1050 50  0001 C CNN
+F 2 "project:CP_Radial_D6.3mm_P2.50mm" H 1688 1050 50  0001 C CNN
 F 3 "~" H 1650 1200 50  0001 C CNN
 	1    1650 1200
 	1    0    0    -1  
@@ -369,45 +357,45 @@ Wire Notes Line
 Wire Notes Line
 	400  400  400  7900
 $Comp
-L Mechanical:MountingHole H1
+L archive:Mechanical_MountingHole H1
 U 1 1 622821FE
 P 4700 6950
 F 0 "H1" H 4800 6996 50  0000 L CNN
 F 1 "MountingHole" H 4800 6905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 4700 6950 50  0001 C CNN
+F 2 "project:MountingHole_2.5mm" H 4700 6950 50  0001 C CNN
 F 3 "~" H 4700 6950 50  0001 C CNN
 	1    4700 6950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L archive:Mechanical_MountingHole H2
 U 1 1 62283950
 P 4700 7200
 F 0 "H2" H 4800 7246 50  0000 L CNN
 F 1 "MountingHole" H 4800 7155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 4700 7200 50  0001 C CNN
+F 2 "project:MountingHole_2.5mm" H 4700 7200 50  0001 C CNN
 F 3 "~" H 4700 7200 50  0001 C CNN
 	1    4700 7200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L archive:Mechanical_MountingHole H3
 U 1 1 6228F8E7
 P 4700 7400
 F 0 "H3" H 4800 7446 50  0000 L CNN
 F 1 "MountingHole" H 4800 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 4700 7400 50  0001 C CNN
+F 2 "project:MountingHole_2.5mm" H 4700 7400 50  0001 C CNN
 F 3 "~" H 4700 7400 50  0001 C CNN
 	1    4700 7400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
+L archive:Mechanical_MountingHole H4
 U 1 1 6228F8ED
 P 4700 7600
 F 0 "H4" H 4800 7646 50  0000 L CNN
 F 1 "MountingHole" H 4800 7555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm" H 4700 7600 50  0001 C CNN
+F 2 "project:MountingHole_2.5mm" H 4700 7600 50  0001 C CNN
 F 3 "~" H 4700 7600 50  0001 C CNN
 	1    4700 7600
 	1    0    0    -1  
@@ -430,7 +418,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 950  2150 1550
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 618A5F4E
 P 2150 4100
 F 0 "#PWR?" H 2150 3850 50  0001 C CNN
@@ -462,7 +450,7 @@ F2 "24-signal" I L 4750 4200 50
 F3 "5V-signal" O R 5750 4200 50 
 $EndSheet
 Wire Wire Line
-	9350 3600 9300 3600
+	9350 3600 9050 3600
 Wire Wire Line
 	4750 3350 4250 3350
 Wire Wire Line
@@ -470,76 +458,52 @@ Wire Wire Line
 Wire Wire Line
 	4350 4200 4750 4200
 Wire Wire Line
-	7000 1500 7000 3350
-Connection ~ 7000 3350
+	6800 3550 6800 4200
 Wire Wire Line
-	7000 3350 7400 3350
+	6800 4200 5750 4200
 Wire Wire Line
-	6900 3550 6900 4200
-Wire Wire Line
-	6900 4200 5750 4200
-Wire Wire Line
-	6900 3550 7400 3550
-Connection ~ 6900 3550
-Wire Wire Line
-	6900 1500 6900 1850
+	6800 3550 7400 3550
+Connection ~ 6800 3550
 Wire Wire Line
 	8000 4850 8000 4900
 Wire Wire Line
-	7400 3850 6700 3850
+	7400 3850 6900 3850
 Wire Wire Line
-	7400 4050 6600 4050
-Wire Wire Line
-	9400 1500 9400 1600
-Wire Wire Line
-	9300 1500 9300 1850
-Wire Wire Line
-	9200 1500 9200 2000
-Wire Wire Line
-	9100 1750 9100 1500
-Wire Wire Line
-	9000 1500 9100 2100
-Wire Wire Line
-	8900 1700 8900 1500
+	7400 4050 7000 4050
 $Comp
-L archive:Connector_Conn_01x06_Male J3
+L archive:project_Connector_Conn_01x06_Male J3
 U 1 1 61A70185
-P 9100 1300
-F 0 "J3" V 8900 1600 50  0000 R CNN
-F 1 "Conn_01x06_Male" V 9000 1550 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 9100 1300 50  0001 C CNN
-F 3 "~" H 9100 1300 50  0001 C CNN
-	1    9100 1300
-	0    -1   1    0   
+P 9150 1300
+F 0 "J3" V 8950 1300 50  0000 R CNN
+F 1 "Conn_01x06_Male" V 9050 1550 50  0000 R CNN
+F 2 "project:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 9150 1300 50  0001 C CNN
+F 3 "~" H 9150 1300 50  0001 C CNN
+	1    9150 1300
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9300 1850 9300 3600
+	9050 1900 9050 3600
 Wire Wire Line
-	9200 2000 9200 3500
+	9250 2000 9250 3500
 Wire Wire Line
-	9200 3500 9350 3500
+	9250 3500 9350 3500
 Wire Wire Line
-	6700 3850 6700 2000
-Connection ~ 6700 2000
+	6900 3850 6900 2000
+Connection ~ 6900 2000
 Wire Wire Line
-	6700 2000 9200 2000
+	6900 2000 9250 2000
 Wire Wire Line
-	6600 4050 6600 2100
-Connection ~ 6600 2100
+	7000 4050 7000 2100
 Wire Wire Line
-	6600 2100 9100 2100
+	7000 2100 9150 2100
 Wire Wire Line
-	9100 2100 9100 3400
+	9150 2100 9150 3400
 Wire Wire Line
-	9100 3400 9350 3400
+	9150 3400 9350 3400
 Wire Wire Line
-	9300 1850 6900 1850
-Connection ~ 9300 1850
-Connection ~ 6900 1850
+	6800 1900 6800 3550
 Wire Wire Line
-	6900 1850 6900 3550
-Wire Wire Line
-	5750 3350 7000 3350
+	5750 3350 6500 3350
 Wire Wire Line
 	10250 3450 10350 3450
 Wire Wire Line
@@ -554,4 +518,81 @@ Wire Wire Line
 	10250 3350 10650 3350
 Wire Wire Line
 	10450 3550 10250 3550
+Wire Wire Line
+	9350 1600 9350 1500
+Connection ~ 9150 2100
+Wire Wire Line
+	8450 1750 8950 1750
+Wire Wire Line
+	6400 1500 6400 1600
+Wire Wire Line
+	6800 1500 6800 1900
+Connection ~ 6800 1900
+Wire Wire Line
+	6900 1500 6900 2000
+Connection ~ 7000 2100
+Wire Wire Line
+	9250 2000 9250 1500
+Connection ~ 9250 2000
+Wire Wire Line
+	9150 1500 9150 2100
+Wire Wire Line
+	8950 1750 8950 1500
+Wire Wire Line
+	9050 1900 9050 1500
+Connection ~ 9050 1900
+Wire Wire Line
+	6800 1900 9050 1900
+Connection ~ 6500 3350
+Wire Wire Line
+	6500 3350 7400 3350
+Wire Wire Line
+	7000 1500 7000 2100
+Wire Wire Line
+	6500 1500 6500 3350
+Wire Wire Line
+	8850 1500 8850 1650
+Wire Wire Line
+	8850 1650 8700 1650
+NoConn ~ 7800 4850
+NoConn ~ 7900 4850
+NoConn ~ 7400 4450
+NoConn ~ 7400 4350
+NoConn ~ 7400 4250
+NoConn ~ 7400 4150
+NoConn ~ 7400 3950
+NoConn ~ 7400 3750
+NoConn ~ 7400 3650
+NoConn ~ 7400 3450
+NoConn ~ 7400 3250
+NoConn ~ 7400 3150
+NoConn ~ 8400 3150
+NoConn ~ 8400 3350
+NoConn ~ 8400 3550
+NoConn ~ 8400 3750
+NoConn ~ 8400 3850
+NoConn ~ 8400 3950
+NoConn ~ 8400 4050
+NoConn ~ 8400 4150
+NoConn ~ 8400 4250
+NoConn ~ 8400 4450
+NoConn ~ 8400 4550
+NoConn ~ 6600 1500
+NoConn ~ 6700 1500
+NoConn ~ 2950 2100
+NoConn ~ 2950 2200
+NoConn ~ 2950 2300
+NoConn ~ 2950 2400
+NoConn ~ 2950 2500
+NoConn ~ 2950 2600
+NoConn ~ 2950 2800
+NoConn ~ 2950 2900
+NoConn ~ 2950 3000
+NoConn ~ 2950 3100
+NoConn ~ 2950 3200
+NoConn ~ 2950 3300
+NoConn ~ 2950 3400
+NoConn ~ 2950 3500
+NoConn ~ 8000 2750
+NoConn ~ 8100 2750
 $EndSCHEMATC

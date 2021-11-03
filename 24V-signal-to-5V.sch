@@ -19,9 +19,10 @@ U 1 1 6180DF65
 P 4800 4100
 AR Path="/617FD833/6180DF65" Ref="R5"  Part="1" 
 AR Path="/6186BF69/6180DF65" Ref="R1"  Part="1" 
+AR Path="/6180DF65" Ref="R1"  Part="1" 
 F 0 "R5" V 4700 4050 50  0000 L CNN
 F 1 "2.7k Ω" V 4900 4000 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4730 4100 50  0001 C CNN
+F 2 "project:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 4730 4100 50  0001 C CNN
 F 3 "~" H 4800 4100 50  0001 C CNN
 	1    4800 4100
 	0    -1   1    0   
@@ -29,30 +30,17 @@ $EndComp
 Wire Wire Line
 	6350 4000 5750 4000
 $Comp
-L archive:Isolator_4N35 U3
+L archive:project_Isolator_4N35 U3
 U 1 1 6180DF6C
 P 5450 4000
 AR Path="/617FD833/6180DF6C" Ref="U3"  Part="1" 
 AR Path="/6186BF69/6180DF6C" Ref="U2"  Part="1" 
 F 0 "U3" H 5450 3683 50  0000 C CNN
 F 1 "4N35" H 5450 3774 50  0000 C CNN
-F 2 "Package_DIP:DIP-6_W7.62mm" H 5250 3800 50  0001 L CIN
+F 2 "project:DIP-6_W7.62mm" H 5250 3800 50  0001 L CIN
 F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 5450 4000 50  0001 L CNN
 	1    5450 4000
 	1    0    0    1   
-$EndComp
-$Comp
-L archive:Device_R R7
-U 1 1 6180DF72
-P 6500 4000
-AR Path="/617FD833/6180DF72" Ref="R7"  Part="1" 
-AR Path="/6186BF69/6180DF72" Ref="R3"  Part="1" 
-F 0 "R7" V 6600 3950 50  0000 L CNN
-F 1 "100 Ω" V 6400 3900 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6430 4000 50  0001 C CNN
-F 3 "~" H 6500 4000 50  0001 C CNN
-	1    6500 4000
-	0    1    -1   0   
 $EndComp
 $Comp
 L archive:Device_R R8
@@ -60,9 +48,10 @@ U 1 1 6180DF78
 P 6500 4350
 AR Path="/617FD833/6180DF78" Ref="R8"  Part="1" 
 AR Path="/6186BF69/6180DF78" Ref="R4"  Part="1" 
+AR Path="/6180DF78" Ref="R4"  Part="1" 
 F 0 "R8" V 6600 4300 50  0000 L CNN
 F 1 "100k Ω" V 6350 4200 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6430 4350 50  0001 C CNN
+F 2 "project:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6430 4350 50  0001 C CNN
 F 3 "~" H 6500 4350 50  0001 C CNN
 	1    6500 4350
 	0    1    -1   0   
@@ -73,15 +62,16 @@ U 1 1 6180DF7E
 P 6500 3650
 AR Path="/617FD833/6180DF7E" Ref="R6"  Part="1" 
 AR Path="/6186BF69/6180DF7E" Ref="R2"  Part="1" 
+AR Path="/6180DF7E" Ref="R2"  Part="1" 
 F 0 "R6" V 6600 3600 50  0000 L CNN
 F 1 "4.7 k Ω" V 6400 3500 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6430 3650 50  0001 C CNN
+F 2 "project:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6430 3650 50  0001 C CNN
 F 3 "~" H 6500 3650 50  0001 C CNN
 	1    6500 3650
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L archive:power_+5V #PWR?
 U 1 1 6180DF84
 P 7050 3200
 AR Path="/617FD833/6180DF84" Ref="#PWR?"  Part="1" 
@@ -109,16 +99,16 @@ Connection ~ 5950 3650
 Wire Wire Line
 	5950 3400 5950 3650
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 6180DF95
-P 4050 4250
+P 4050 4600
 AR Path="/617FD833/6180DF95" Ref="#PWR?"  Part="1" 
 AR Path="/6186BF69/6180DF95" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4050 4000 50  0001 C CNN
-F 1 "GND" H 4055 4077 50  0000 C CNN
-F 2 "" H 4050 4250 50  0001 C CNN
-F 3 "" H 4050 4250 50  0001 C CNN
-	1    4050 4250
+F 0 "#PWR?" H 4050 4350 50  0001 C CNN
+F 1 "GND" H 4055 4427 50  0000 C CNN
+F 2 "" H 4050 4600 50  0001 C CNN
+F 3 "" H 4050 4600 50  0001 C CNN
+	1    4050 4600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -129,7 +119,7 @@ Connection ~ 7300 4350
 Wire Wire Line
 	7300 4350 7300 4600
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 6180DFA2
 P 7300 4600
 AR Path="/617FD833/6180DFA2" Ref="#PWR?"  Part="1" 
@@ -156,7 +146,7 @@ Text HLabel 3650 4100 0    50   Input ~ 0
 Text HLabel 8600 4050 2    50   Output ~ 0
 5V-signal
 Wire Wire Line
-	4050 3900 4050 4250
+	4050 3900 4050 4600
 Wire Wire Line
 	3650 4100 4650 4100
 Wire Wire Line
@@ -165,4 +155,18 @@ Wire Wire Line
 	7650 3400 7650 4050
 Wire Wire Line
 	7650 4050 8600 4050
+$Comp
+L archive:Device_R R7
+U 1 1 6180DF72
+P 6500 4000
+AR Path="/617FD833/6180DF72" Ref="R7"  Part="1" 
+AR Path="/6186BF69/6180DF72" Ref="R3"  Part="1" 
+AR Path="/6180DF72" Ref="R3"  Part="1" 
+F 0 "R7" V 6600 3950 50  0000 L CNN
+F 1 "100 Ω" V 6400 3900 50  0000 L CNN
+F 2 "project:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6430 4000 50  0001 C CNN
+F 3 "~" H 6500 4000 50  0001 C CNN
+	1    6500 4000
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
