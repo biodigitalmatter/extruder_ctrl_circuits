@@ -265,43 +265,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 5250 3100 5350
 Connection ~ 3100 5350
-$Comp
-L archive:power_GND #PWR?
-U 1 1 61A6B0A7
-P 9350 1600
-F 0 "#PWR?" H 9350 1350 50  0001 C CNN
-F 1 "GND" H 9355 1427 50  0000 C CNN
-F 2 "" H 9350 1600 50  0001 C CNN
-F 3 "" H 9350 1600 50  0001 C CNN
-	1    9350 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L archive:power_+5V #PWR?
-U 1 1 61B167ED
-P 8450 1550
-F 0 "#PWR?" H 8450 1400 50  0001 C CNN
-F 1 "+5V" H 8465 1723 50  0000 C CNN
-F 2 "" H 8450 1550 50  0001 C CNN
-F 3 "" H 8450 1550 50  0001 C CNN
-	1    8450 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L archive:power_+24V #PWR?
-U 1 1 61B170C5
-P 8700 1550
-F 0 "#PWR?" H 8700 1400 50  0001 C CNN
-F 1 "+24V" H 8715 1723 50  0000 C CNN
-F 2 "" H 8700 1550 50  0001 C CNN
-F 3 "" H 8700 1550 50  0001 C CNN
-	1    8700 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 1550 8700 1650
-Wire Wire Line
-	8450 1550 8450 1750
 Wire Wire Line
 	7100 1500 7100 1600
 Wire Wire Line
@@ -470,32 +433,11 @@ Wire Wire Line
 	7400 3850 6900 3850
 Wire Wire Line
 	7400 4050 7000 4050
-$Comp
-L archive:project_Connector_Conn_01x06_Male J3
-U 1 1 61A70185
-P 9150 1300
-F 0 "J3" V 8950 1300 50  0000 R CNN
-F 1 "Conn_01x06_Male" V 9050 1550 50  0000 R CNN
-F 2 "project:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 9150 1300 50  0001 C CNN
-F 3 "~" H 9150 1300 50  0001 C CNN
-	1    9150 1300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9050 1900 9050 3600
-Wire Wire Line
-	9250 2000 9250 3500
-Wire Wire Line
-	9250 3500 9350 3500
 Wire Wire Line
 	6900 3850 6900 2000
 Connection ~ 6900 2000
 Wire Wire Line
-	6900 2000 9250 2000
-Wire Wire Line
 	7000 4050 7000 2100
-Wire Wire Line
-	7000 2100 9150 2100
 Wire Wire Line
 	9150 2100 9150 3400
 Wire Wire Line
@@ -519,11 +461,6 @@ Wire Wire Line
 Wire Wire Line
 	10450 3550 10250 3550
 Wire Wire Line
-	9350 1600 9350 1500
-Connection ~ 9150 2100
-Wire Wire Line
-	8450 1750 8950 1750
-Wire Wire Line
 	6400 1500 6400 1600
 Wire Wire Line
 	6800 1500 6800 1900
@@ -531,18 +468,9 @@ Connection ~ 6800 1900
 Wire Wire Line
 	6900 1500 6900 2000
 Connection ~ 7000 2100
+Connection ~ 8950 1900
 Wire Wire Line
-	9250 2000 9250 1500
-Connection ~ 9250 2000
-Wire Wire Line
-	9150 1500 9150 2100
-Wire Wire Line
-	8950 1750 8950 1500
-Wire Wire Line
-	9050 1900 9050 1500
-Connection ~ 9050 1900
-Wire Wire Line
-	6800 1900 9050 1900
+	6800 1900 8950 1900
 Connection ~ 6500 3350
 Wire Wire Line
 	6500 3350 7400 3350
@@ -550,10 +478,6 @@ Wire Wire Line
 	7000 1500 7000 2100
 Wire Wire Line
 	6500 1500 6500 3350
-Wire Wire Line
-	8850 1500 8850 1650
-Wire Wire Line
-	8850 1650 8700 1650
 NoConn ~ 7800 4850
 NoConn ~ 7900 4850
 NoConn ~ 7400 4450
@@ -595,4 +519,86 @@ NoConn ~ 2950 3400
 NoConn ~ 2950 3500
 NoConn ~ 8000 2750
 NoConn ~ 8100 2750
+Wire Wire Line
+	9050 1700 9050 1500
+Wire Wire Line
+	7000 2100 9150 2100
+Connection ~ 9150 2100
+Wire Wire Line
+	9250 3500 9350 3500
+Connection ~ 9250 2000
+Wire Wire Line
+	6900 2000 9250 2000
+Wire Wire Line
+	9250 2000 9250 3500
+Wire Wire Line
+	8950 1900 8950 1500
+Wire Wire Line
+	8550 1700 9050 1700
+Wire Wire Line
+	8850 1800 8850 1500
+Wire Wire Line
+	8350 1800 8850 1800
+$Comp
+L archive:project_Connector_Conn_01x06_Male J3
+U 1 1 61A70185
+P 9050 1300
+F 0 "J3" V 8850 1300 50  0000 R CNN
+F 1 "Conn_01x06_Male" V 8950 1550 50  0000 R CNN
+F 2 "project:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical" H 9050 1300 50  0001 C CNN
+F 3 "~" H 9050 1300 50  0001 C CNN
+	1    9050 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 1550 8350 1800
+Wire Wire Line
+	8550 1550 8550 1700
+$Comp
+L archive:power_+24V #PWR?
+U 1 1 61B170C5
+P 8550 1550
+F 0 "#PWR?" H 8550 1400 50  0001 C CNN
+F 1 "+24V" H 8565 1723 50  0000 C CNN
+F 2 "" H 8550 1550 50  0001 C CNN
+F 3 "" H 8550 1550 50  0001 C CNN
+	1    8550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L archive:power_+5V #PWR?
+U 1 1 61B167ED
+P 8350 1550
+F 0 "#PWR?" H 8350 1400 50  0001 C CNN
+F 1 "+5V" H 8365 1723 50  0000 C CNN
+F 2 "" H 8350 1550 50  0001 C CNN
+F 3 "" H 8350 1550 50  0001 C CNN
+	1    8350 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1500 9150 2100
+Wire Wire Line
+	9250 1500 9250 2000
+$Comp
+L archive:power_GND #PWR?
+U 1 1 61A6B0A7
+P 8200 1650
+F 0 "#PWR?" H 8200 1400 50  0001 C CNN
+F 1 "GND" H 8205 1477 50  0000 C CNN
+F 2 "" H 8200 1650 50  0001 C CNN
+F 3 "" H 8200 1650 50  0001 C CNN
+	1    8200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1900 9050 1900
+Wire Wire Line
+	9050 1900 9050 3600
+Wire Wire Line
+	8200 1650 8200 1600
+Wire Wire Line
+	8750 1600 8750 1500
+Wire Wire Line
+	8750 1600 8200 1600
 $EndSCHEMATC
