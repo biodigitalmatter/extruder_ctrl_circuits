@@ -1,4 +1,4 @@
-19225268569213261
+19428862705660588
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -47278,6 +47278,20 @@ dcdc traco 5w smd
 6
 6
 Converter_DCDC
+Converter_DCDC_TRACO_TEL-3-xxxx_Dual_THT
+DCDC-Converter, TRACO, TEL 3-xxxx, Dual output
+DCDC-Converter TRACO TEL3-xxxx Dual_output
+0
+12
+12
+Converter_DCDC
+Converter_DCDC_TRACO_TEL-3-xxxx_Single_THT
+DCDC-Converter, TRACO, TEL 3-xxxx, Single output
+DCDC-Converter TRACO TEL3-xxxx Single_output
+0
+12
+12
+Converter_DCDC
 Converter_DCDC_TRACO_TEN10-xxxx_Dual_THT
 DCDC-Converter, TRACO, TEN10-xxxx, single output, https://assets.tracopower.com/20171102100522/TEN10/documents/ten10-datasheet.pdf
 DCDC-Converter TRACO TEN10-xxxx single output
@@ -47319,6 +47333,34 @@ traco dcdc tht 15w
 0
 9
 9
+Converter_DCDC
+Converter_DCDC_TRACO_TMA05xx_TMA12xx_Dual_THT
+DCDC-Converter, Traco, TMA05xx, TMA12xx, Dual output
+DCDC-Converter TRACO TMA05xx TMA12xx Dual_output
+0
+5
+5
+Converter_DCDC
+Converter_DCDC_TRACO_TMA05xx_TMA12xx_Single_THT
+DCDC-Converter, Traco, TMA05xx, TMA12xx, Single output
+DCDC-Converter TRACO TMA05xx TMA12xx Single_output
+0
+4
+4
+Converter_DCDC
+Converter_DCDC_TRACO_TMA15xx_TMA24xx_Dual_THT
+DCDC-Converter, Traco, TMA15xx, TMA24xx, Dual output
+DCDC-Converter TRACO TMA15xx TMA24xx Dual_output
+0
+5
+5
+Converter_DCDC
+Converter_DCDC_TRACO_TMA15xx_TMA24xx_Single_THT
+DCDC-Converter, Traco, TMA15xx, TMA24xx, Single output
+DCDC-Converter TRACO TMA15xx TMA24xx Single_output
+0
+4
+4
 Converter_DCDC
 Converter_DCDC_TRACO_TMR-1-xxxx_Dual_THT
 DCDC-Converter, TRACO, TMR 1-xxxx, Dual output, Rev. March 21.2016
@@ -65086,6 +65128,13 @@ THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
 14
 14
 Package_DIP
+DIP-16-ISO12X_W7.62mm
+16-lead dip package, row spacing 7.62 mm (300 mils)
+DIL DIP PDIP 2.54mm 7.62mm 300mil
+0
+8
+8
+Package_DIP
 DIP-16_W7.62mm
 16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
 THT DIP DIL PDIP 2.54mm 7.62mm 300mil
@@ -76761,6 +76810,34 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
+Socket_Arduino_Uno
+Arduino_1pin
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x06
+Through hole socket strip
+socket strip
+0
+6
+6
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x08
+Through hole socket strip
+socket strip
+0
+8
+8
+Socket_Arduino_Uno
+Socket_Strip_Arduino_1x10
+Through hole socket strip
+socket strip
+0
+10
+10
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking
@@ -83041,12 +83118,26 @@ THT DIP DIL PDIP 2.54mm 7.62mm 300mil
 6
 6
 project
+Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43045-0400 (alternative finishes: 43045-040x), 2 Pins per row (https://www.molex.com/pdm_docs/sd/430450201_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+4
+4
+project
 Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43045-0412 (compatible alternatives: 43045-0413, 43045-0424), 2 Pins per row (http://www.molex.com/pdm_docs/sd/430450212_sd.pdf), generated with kicad-footprint-generator
 connector Molex Micro-Fit_3.0 side entry
 0
 4
 4
+project
+Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal
+Molex Micro-Fit 3.0 Connector System, 43045-0600 (alternative finishes: 43045-060x), 3 Pins per row (https://www.molex.com/pdm_docs/sd/430450201_sd.pdf), generated with kicad-footprint-generator
+connector Molex Micro-Fit_3.0 horizontal
+0
+6
+6
 project
 Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical
 Molex Micro-Fit 3.0 Connector System, 43045-0612 (compatible alternatives: 43045-0613, 43045-0624), 3 Pins per row (http://www.molex.com/pdm_docs/sd/430450212_sd.pdf), generated with kicad-footprint-generator
