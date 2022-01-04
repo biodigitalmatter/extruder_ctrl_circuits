@@ -25,5 +25,8 @@ fp-info-cache
 *.tsv
 *.xml
 
- # archive
+# archive
  project.log
+
+# backups
+*-backups/*.zip
