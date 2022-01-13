@@ -2,8 +2,8 @@
   "board": {
     "design_settings": {
       "defaults": {
-        "board_outline_line_width": 0.15,
-        "copper_line_width": 0.15,
+        "board_outline_line_width": 0.049999999999999996,
+        "copper_line_width": 0.19999999999999998,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
@@ -33,25 +33,24 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.048,
-          "height": 4.064,
-          "width": 4.064
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.12,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": true,
+          "45_degree_only": false,
           "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
-        "filename": "board_design_settings.json",
         "version": 2
       },
       "rule_severities": {
@@ -99,7 +98,7 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.075,
+        "min_copper_edge_clearance": 0.01,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
@@ -111,14 +110,7 @@
         "min_via_diameter": 0.39999999999999997,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [
-        0.0,
-        0.3,
-        0.5,
-        1.0,
-        2.0,
-        3.0
-      ],
+      "track_widths": [],
       "via_dimensions": [],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
@@ -339,7 +331,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "extruder_controll.kicad_pro",
+    "filename": "24V_plc_integration_shield.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -357,94 +349,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
-        "via_diameter": 0.6,
-        "via_drill": 0.4,
-        "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.6,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "24V",
-        "nets": [
-          "+24V"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 3.0,
-        "via_diameter": 0.6,
-        "via_drill": 0.4,
-        "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "5V",
-        "nets": [
-          "+5V",
-          "0V"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 2.0,
-        "via_diameter": 0.6,
-        "via_drill": 0.4,
-        "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.3,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Signal",
-        "nets": [
-          "/0(Rx)",
-          "/1(Tx)",
-          "/12(MISO)",
-          "/13(SCK)",
-          "/2",
-          "/24V-signal-to-5V-1/24-signal",
-          "/24V-signal-to-5V-2/24-signal",
-          "/3(**)",
-          "/4",
-          "/5(**)",
-          "/6(**)",
-          "/7",
-          "/8",
-          "/9(**)",
-          "/A0",
-          "/A1",
-          "/A2",
-          "/A3",
-          "/A4(SDA)",
-          "/A5(SCL)",
-          "/AREF",
-          "Net-(R1-Pad2)",
-          "Net-(R3-Pad2)",
-          "Net-(R4-Pad2)",
-          "Net-(R5-Pad2)",
-          "Net-(R7-Pad2)",
-          "Net-(R8-Pad2)"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "via_diameter": 0.6,
+        "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
       }
@@ -510,11 +415,11 @@
     ],
     [
       "00000000-0000-0000-0000-00006186bf69",
-      "24V-signal-to-5V-1"
+      "24V signal to 5V-1"
     ],
     [
       "00000000-0000-0000-0000-0000617fd833",
-      "24V-signal-to-5V-2"
+      "24V signal  to 5V-2"
     ]
   ],
   "text_variables": {}
