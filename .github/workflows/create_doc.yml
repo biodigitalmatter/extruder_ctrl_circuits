@@ -7,16 +7,15 @@ jobs:
       image: yaqwsx/kikit:v1.0.2
     steps:
       - uses: actions/checkout@v2
-      - run: 
       - run: |
           sudo apt install xdotool
           sudo apt install xsltproc
-        pip install kiauto
-      - run: kikit present
+          pip install kiauto
+      - run: cd 24V_plc_integration_shield && kikit present
   run-drc:
     runs-on: ubuntu-latest
     container:
       image: yaqwsx/kikit:v1.0.2
     steps:
       - uses: actions/checkout@v2
-      - run: kikit drc run *.kicad_pcb
+      - run: cd 24V_plc_integration_shield && kikit drc run *.kicad_pcb

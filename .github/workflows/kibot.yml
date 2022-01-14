@@ -18,17 +18,17 @@ jobs:
       - uses: INTI-CMNB/KiBot@v1
         with:
           # Required - kibot config file
-          config: config.kibot.yml
+          config: 24V_plc_integration_shield/config.kibot.yml
           # optional - prefix to output defined in config
-          dir: kibot-output
+          dir: 24V_plc_integration_shield/kibot-output
           # optional - schematic file
-          schema: "extruder_controll.sch"
+          schema: 24V_plc_integration_shield/extruder_controll.sch
           # optional - PCB design file
-          board: "extruder_controll.kicad_pcb"
+          board: 24V_plc_integration_shield/extruder_controll.kicad_pcb
           verbose: true
       - run: tree
       - name: upload results
         uses: actions/upload-artifact@v2
         with:
-          name: kibot-output
-          path: kibot-output
+          name: 24V_plc_integration_shield-kibot-output
+          path: 24V_plc_integration_shield/kibot-output
