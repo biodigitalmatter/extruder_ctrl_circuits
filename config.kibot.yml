@@ -1,0 +1,25 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: false
+  ignore_unconnected: false
+
+global:
+  # We want the revision added to the names for this project
+  output: "%f-%i_%r.%x"
+
+outputs:
+  - name: "print_sch"
+    type: pdf_sch_print
+    comment: "Print schematic (PDF)"
+    dir: .
+    options:
+      output: Schematic.pdf
+
+  - name: BoM
+    type: ibom
+    comment: "Interactive Bill of Materials (HTML)"
+    dir: BoM
