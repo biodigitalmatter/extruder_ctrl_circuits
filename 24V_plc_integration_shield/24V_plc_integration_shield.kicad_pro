@@ -48,8 +48,20 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "silk_over_copper|111506000|74805000|a07b6b2b-7179-4297-b163-5e47ffbe76d3|2609107f-7351-46d6-94b6-871ef49beff7",
+        "silk_over_copper|111506000|87425000|a07b6b2b-7179-4297-b163-5e47ffbe76d3|e4793b0e-b919-45ba-a498-02456427e67e",
+        "silk_over_copper|128752000|74930000|5bbde4f9-fcdb-4d27-a2d6-3847fcdd87ba|da337fe1-c322-4637-ad26-2622b82ac8ee",
+        "silk_overlap|128752000|74930000|5bbde4f9-fcdb-4d27-a2d6-3847fcdd87ba|da337fe1-c322-4637-ad26-2622b82ac8ee",
+        "silk_overlap|128752000|75752526|5bbde4f9-fcdb-4d27-a2d6-3847fcdd87ba|8765371a-21c2-4fe3-a3af-88f5eb1f02a0"
+      ],
       "meta": {
         "version": 2
       },
@@ -110,8 +122,15 @@
         "min_via_diameter": 0.39999999999999997,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -338,7 +357,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.3,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -348,8 +367,105 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
+        "track_width": 0.5,
+        "via_diameter": 0.6,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.05,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "NC",
+        "nets": [
+          "unconnected-(J2-Pad2)",
+          "unconnected-(J2-Pad3)",
+          "unconnected-(J2-Pad6)",
+          "unconnected-(J2-Pad7)",
+          "unconnected-(J5-Pad3)",
+          "unconnected-(P1-Pad1)",
+          "unconnected-(P1-Pad2)",
+          "unconnected-(P1-Pad3)",
+          "unconnected-(P1-Pad4)",
+          "unconnected-(P1-Pad5)",
+          "unconnected-(P1-Pad8)",
+          "unconnected-(P2-Pad1)",
+          "unconnected-(P2-Pad2)",
+          "unconnected-(P2-Pad3)",
+          "unconnected-(P2-Pad4)",
+          "unconnected-(P2-Pad5)",
+          "unconnected-(P2-Pad6)",
+          "unconnected-(P3-Pad1)",
+          "unconnected-(P3-Pad10)",
+          "unconnected-(P3-Pad2)",
+          "unconnected-(P3-Pad3)",
+          "unconnected-(P3-Pad5)",
+          "unconnected-(P3-Pad6)",
+          "unconnected-(P3-Pad7)",
+          "unconnected-(P3-Pad8)",
+          "unconnected-(P4-Pad2)",
+          "unconnected-(P4-Pad3)",
+          "unconnected-(P4-Pad5)",
+          "unconnected-(P4-Pad7)",
+          "unconnected-(P4-Pad8)",
+          "unconnected-(P5-Pad1)",
+          "unconnected-(P7-Pad1)",
+          "unconnected-(P8-Pad1)",
+          "unconnected-(U2-Pad3)",
+          "unconnected-(U3-Pad3)",
+          "unconnected-(U4-Pad4)",
+          "unconnected-(U4-Pad6)"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.6,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.6,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "power_24V",
+        "nets": [
+          "+24V"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 3.0,
+        "via_diameter": 0.6,
+        "via_drill": 0.4,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "power_5V",
+        "nets": [
+          "+5V",
+          "0V"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.0,
+        "via_diameter": 0.6,
         "via_drill": 0.4,
         "wire_width": 6.0
       }
