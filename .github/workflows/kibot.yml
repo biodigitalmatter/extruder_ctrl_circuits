@@ -22,9 +22,9 @@ jobs:
           # optional - prefix to output defined in config
           dir: 24V_plc_integration_shield/kibot-output
           # optional - schematic file
-          schema: 24V_plc_integration_shield/extruder_controll.sch
+          schema: "24V_plc_integration_shield/*.sch"
           # optional - PCB design file
-          board: 24V_plc_integration_shield/extruder_controll.kicad_pcb
+          board: "24V_plc_integration_shield/*.kicad_pcb"
           verbose: true
       - run: tree
       - name: upload results
