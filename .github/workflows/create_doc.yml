@@ -1,3 +1,4 @@
+---
 name: use kikit to create documentation
 on: [push]
 jobs:
@@ -7,11 +8,38 @@ jobs:
       image: yaqwsx/kikit:v1.0.2
     steps:
       - uses: actions/checkout@v2
-      - run: cd 24V_plc_integration_shield && kikit present
-  run-drc:
+      - run: mkdir -p kikit-out kibot-out
+      - uses: INTI-CMNB/KiBot@v1
+        with:
+          # Required - kibot config file
+          config: 24V_plc_integration_shield/docs.kibot.yml
+          # optional - prefix to output defined in config
+          dir: kibot-out
+          # optional - schematic file
+          schema: "24V_plc_integration_shield/*.kicad_sch"
+          # optional - PCB design file
+          board: "24V_plc_integration_shield/*.kicad_pcb"
+      - run: >
+          kikit present boardpage
+            --name 24V_plc_integration_shield
+            -r kibot-output/*
+            -b 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb
+            kikit-out
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          build_dir: kikit-output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  run-checks:
     runs-on: ubuntu-latest
-    container:
-      image: yaqwsx/kikit:v1.0.2
     steps:
       - uses: actions/checkout@v2
-      - run: cd 24V_plc_integration_shield && kikit drc run *.kicad_pcb
+      - uses: INTI-CMNB/KiBot@v1
+        with:
+          # Required - kibot config file
+          config: check.kibot.yml
+          # optional - schematic file
+          schema: "*/*.kicad_sch"
+          # optional - PCB design file
+          board: "*/*.kicad_pcb"

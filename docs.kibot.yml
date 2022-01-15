@@ -1,0 +1,39 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: false
+  run_drc: false
+  check_zone_fills: true
+  ignore_unconnected: true
+  pcb_replace:
+    date_command: date -d @`git log -1 --format='%at' -- $KIBOT_PCB_NAME` +%Y-%m-%d_%H-%M-%S
+    replace_tags:
+      - tag: "Comment4"
+        command: git log -1 --format="%h" $KIBOT_PCB_NAME
+        before: "Git_hash:'"
+        after: "'"
+  sch_replace:
+    date_command: date -d @`git log -1 --format='%at' -- $KIBOT_SCH_NAME` +%Y-%m-%d_%H-%M-%S
+    replace_tags:
+      - tag: "Comment4"
+        command: git log -1 --format="%h" $KIBOT_SCH_NAME
+        before: "Git_hash:'"
+        after: "'"
+
+global:
+  # We want the revision added to the names for this project
+  output: "%f-%i_%r.%x"
+
+outputs:
+  - name: "print_sch"
+    type: pdf_sch_print
+    comment: "Print schematic (PDF)"
+    dir: .
+    options:
+      output: Schematic.pdf
+
+  - name: BoM
+    type: ibom
+    comment: "Interactive Bill of Materials (HTML)"
+    dir: BoM
