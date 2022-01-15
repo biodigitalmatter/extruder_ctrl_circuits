@@ -22,6 +22,7 @@ jobs:
       - run: >
           kikit present boardpage
             --name 24V_plc_integration_shield
+            -d 24V_plc_integration_shield/README.md
             -r kibot-output/*
             -b 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb
             kikit-out
