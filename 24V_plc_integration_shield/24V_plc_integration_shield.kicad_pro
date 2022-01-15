@@ -387,7 +387,6 @@
           "unconnected-(J2-Pad3)",
           "unconnected-(J2-Pad6)",
           "unconnected-(J2-Pad7)",
-          "unconnected-(J5-Pad3)",
           "unconnected-(P1-Pad1)",
           "unconnected-(P1-Pad2)",
           "unconnected-(P1-Pad3)",
@@ -460,7 +459,8 @@
         "name": "power_5V",
         "nets": [
           "+5V",
-          "0V"
+          "0V",
+          "Net-(J5-Pad1)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
