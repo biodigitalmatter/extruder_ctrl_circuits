@@ -1,5 +1,5 @@
 ---
-name: use kikit to create documentation
+name: set up webpage with presentation, and tests schema and pcb
 on: [push]
 jobs:
   generate-docs:
@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: mkdir -p kikit-out kibot-out
-      - uses: INTI-CMNB/KiBot@v1
+      - uses: INTI-CMNB/KiBot@v1_k6
         with:
           # Required - kibot config file
           config: docs.kibot.yml
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: INTI-CMNB/KiBot@v1
+      - uses: INTI-CMNB/KiBot@v1_k6
         with:
           # Required - kibot config file
           config: check.kibot.yml
