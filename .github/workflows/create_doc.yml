@@ -16,9 +16,9 @@ jobs:
           # optional - prefix to output defined in config
           dir: kibot-out
           # optional - schematic file
-          schema: "24V_plc_integration_shield/*.kicad_sch"
+          schema: "24V_plc_integration_shield/24V_plc_integration_shield.kicad_sch"
           # optional - PCB design file
-          board: "24V_plc_integration_shield/*.kicad_pcb"
+          board: "24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb"
       - run: >
           kikit present boardpage
             --name 24V_plc_integration_shield
