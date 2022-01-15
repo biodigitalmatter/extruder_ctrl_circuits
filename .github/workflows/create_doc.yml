@@ -12,7 +12,7 @@ jobs:
       - uses: INTI-CMNB/KiBot@v1
         with:
           # Required - kibot config file
-          config: 24V_plc_integration_shield/docs.kibot.yml
+          config: docs.kibot.yml
           # optional - prefix to output defined in config
           dir: kibot-out
           # optional - schematic file

@@ -2862,7 +2862,7 @@
     (property "Footprint" "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" (id 2) (at 144.145 179.705 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Datasheet" " ~" (id 3) (at 145.415 164.465 0)
+    (property "Datasheet" "~" (id 3) (at 145.415 164.465 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 887de90b-71a6-4ba8-9a54-e7fa9f24d926))
