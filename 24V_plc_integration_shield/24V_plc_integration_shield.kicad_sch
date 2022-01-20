@@ -2919,10 +2919,10 @@
     (property "Reference" "L1" (id 0) (at 189.23 130.8099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "100 mH 0.5 A" (id 1) (at 189.23 133.3499 0)
+    (property "Value" "100 µH 0.5 A" (id 1) (at 189.23 133.3499 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" (id 2) (at 187.96 132.08 0)
+    (property "Footprint" "project:L_Radial_D5.0mm_P2.50mm" (id 2) (at 187.96 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 187.96 132.08 0)
@@ -3144,7 +3144,7 @@
       (reference "J5") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
     )
     (path "/e00f4e49-b8f8-4cc2-a4c6-c53dfddbe4df"
-      (reference "L1") (unit 1) (value "100 mH 0.5 A") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm")
+      (reference "L1") (unit 1) (value "100 µH 0.5 A") (footprint "project:L_Radial_D5.0mm_P2.50mm")
     )
     (path "/00000000-0000-0000-0000-00006125b4de"
       (reference "M1") (unit 1) (value "Stepper_Motor_bipolar") (footprint "")
