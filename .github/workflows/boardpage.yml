@@ -1,7 +1,7 @@
-name: use kikit to create documentation
+name: create boardpage
 on: [push]
 jobs:
-  generate-docs:
+  create-boardpage:
     runs-on: ubuntu-latest
     container:
       image: yaqwsx/kikit:v1.0.2
@@ -11,7 +11,7 @@ jobs:
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
           # Required - kibot config file
-          config: 24V_plc_integration_shield/config.kibot.yml
+          config: .github/workflows/boardpage.kibot.yml
           # optional - prefix to output defined in config
           dir: output
           # optional - schematic file
@@ -20,12 +20,12 @@ jobs:
           board: "24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb"
       - run: kikit fab jlcpcb --no-drc 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb output
       - run: >
-          kikit present boardpage 
-          --description 24V_plc_integration_shield/boardpage.md 
-          --board "24V PLC integration shield" "" 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb 
-          --resource output/gerbers.zip 
-          --resource output/bom.html 
-          --resource output/schematic.pdf 
+          kikit present boardpage
+          --description .github/workflows/boardpage.md
+          --board "24V PLC integration shield" "" 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb
+          --resource output/gerbers.zip
+          --resource output/bom.html
+          --resource output/schematic.pdf
           --repository "https://github.com/$GITHUB_REPOSITORY"
           --name "24V PLC integration shield"
           present
