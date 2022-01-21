@@ -11,5 +11,3 @@ jobs:
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
           config: .github/workflows/checks.kibot.yml
-          schema: "{{ cookiecutter.project_slug }}.kicad_sch"
-          board: "{{ cookiecutter.project_slug }}.kicad_pcb"
