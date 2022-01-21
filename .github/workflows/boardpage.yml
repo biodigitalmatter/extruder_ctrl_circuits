@@ -11,7 +11,7 @@ jobs:
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
           # Required - kibot config file
-          config: .github/workflows/boardpage.kibot.yml
+          config: .github/workflows/resources/boardpage.kibot.yml
           # optional - prefix to output defined in config
           dir: output
           # optional - schematic file
@@ -21,7 +21,7 @@ jobs:
       - run: kikit fab jlcpcb --no-drc 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb output
       - run: >
           kikit present boardpage
-          --description .github/workflows/boardpage.md
+          --description .github/workflows/resources/boardpage.md
           --board "24V PLC integration shield" "" 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb
           --resource output/gerbers.zip
           --resource output/bom.html

@@ -1,4 +1,4 @@
-name: generate files from kibot
+name: run checks on project
 
 on:
   push:
@@ -10,4 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
-          config: .github/workflows/checks.kibot.yml
+          config: .github/workflows/resources/checks.kibot.yml
+          schema: 24V_plc_integration_shield/24V_plc_integration_shield.kicad_sch
+          board: 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb
