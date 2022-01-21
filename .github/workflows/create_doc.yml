@@ -7,11 +7,26 @@ jobs:
       image: yaqwsx/kikit:v1.0.2
     steps:
       - uses: actions/checkout@v2
-      - run: cd 24V_plc_integration_shield && kikit present
-  run-drc:
-    runs-on: ubuntu-latest
-    container:
-      image: yaqwsx/kikit:v1.0.2
-    steps:
-      - uses: actions/checkout@v2
-      - run: cd 24V_plc_integration_shield && kikit drc run *.kicad_pcb
+      - run: mkdir output present
+      - uses: INTI-CMNB/KiBot@v1_k6
+        with:
+          # Required - kibot config file
+          config: 24V_plc_integration_shield/config.kibot.yml
+          # optional - prefix to output defined in config
+          dir: output
+          # optional - schematic file
+          schema: "24V_plc_integration_shield/24V_plc_integration_shield.kicad_sch"
+          # optional - PCB design file
+          board: "24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb"
+      - run: kikit fab jlcpcb --no-drc 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb output
+      - run: >
+          kikit present boardpage 
+          --description 24V_plc_integration_shield/boardpage.md 
+          --board "24V PLC integration shield" "" 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb 
+          --resource ../output/gerbers.zip 
+          --resource ../output/bom.html 
+          --resource ../output/schematic.pdf 
+          --repository "https://github.com/$GITHUB_REPOSITORY"
+          --name "24V PLC integration shield"
+          present
+      - run: sed -E -i 's#(<a href=")boards/\w.+-(gerbers\.zip">Download gerbers</a>)#\1output/\2#' present/index.html
