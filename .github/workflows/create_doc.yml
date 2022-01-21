@@ -23,9 +23,9 @@ jobs:
           kikit present boardpage 
           --description 24V_plc_integration_shield/boardpage.md 
           --board "24V PLC integration shield" "" 24V_plc_integration_shield/24V_plc_integration_shield.kicad_pcb 
-          --resource ../output/gerbers.zip 
-          --resource ../output/bom.html 
-          --resource ../output/schematic.pdf 
+          --resource output/gerbers.zip 
+          --resource output/bom.html 
+          --resource output/schematic.pdf 
           --repository "https://github.com/$GITHUB_REPOSITORY"
           --name "24V PLC integration shield"
           present
