@@ -30,7 +30,7 @@ jobs:
           --name "24V PLC integration shield"
           present
       - run: sed -E -i 's#(<a href=")boards/\w.+-(gerbers\.zip">Download gerbers</a>)#\1output/\2#' present/index.html
-      - uses: crazy-max@ghaction-github-pages@a117e4aa1fb4854d021546d2abdfac95be568a3a
+      - uses: crazy-max/ghaction-github-pages@a117e4aa1fb4854d021546d2abdfac95be568a3a
         with:
           target_branch: gh-pages
           build_dir: present
