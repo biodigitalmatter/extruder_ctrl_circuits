@@ -482,7 +482,7 @@
       "step": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "wider_rev_id.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -515,7 +515,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "wider_rev_id.kicad_wks",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
@@ -540,5 +540,12 @@
       "24V signal to 5V-1"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "board_title": "24V PLC Integration Shield",
+    "company": "bioDigital Matter Lab",
+    "drawn_by": "Anton Tetov",
+    "git_describe": "v0.0.0-0-gxxxxxxx",
+    "git_url": "https://github.com/biodigitalmatter/extruder_ctrl_circuits",
+    "project_title": "BF3DP"
+  }
 }

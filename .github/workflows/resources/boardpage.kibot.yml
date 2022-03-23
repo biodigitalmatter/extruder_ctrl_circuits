@@ -6,6 +6,15 @@ preflight:
   run_drc: false
   check_zone_fills: false
   ignore_unconnected: false
+  set_text_variables:
+    - variable: drawn_by
+      command: git log -1 --format="%an"
+    - variable: git_date
+      command: git log -1 --format="%as"
+    - variable: git_describe
+      command: git describe --always
+    - variable: git_url
+      command: git config --get remote.origin.url
 
 outputs:
   - name: "print_sch"
@@ -18,4 +27,4 @@ outputs:
     type: ibom
     comment: "Interactive Bill of Materials (HTML)"
     options:
-      output: bom.html 
+      output: bom.html

@@ -5,8 +5,12 @@
   (paper "A4")
 
   (title_block
-    (date "2022-03-15")
-    (rev "v2.2pre")
+    (title "${project_title} - ${board_title}")
+    (date "2022-03-23")
+    (rev "${git_describe}")
+    (company "${company}")
+    (comment 1 "${drawn_by}")
+    (comment 4 "${git_url}")
   )
 
   (lib_symbols
