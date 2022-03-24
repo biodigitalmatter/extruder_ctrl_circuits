@@ -7,7 +7,10 @@ jobs:
       image: yaqwsx/kikit:v1.0.2
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: mkdir output present
+      - run: git describe --always
       - uses: INTI-CMNB/KiBot@v1_k6
         with:
           # Required - kibot config file
