@@ -14,11 +14,11 @@
   )
 
   (lib_symbols
-    (symbol "Connector:Conn_01x02_Female" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Connector:Conn_01x02_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_01x02_Female" (at 0 -5.08 0)
+      (property "Value" "Conn_01x02_Socket" (at 0 -5.08 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -27,16 +27,19 @@
       (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
+      (property "ki_locked" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
       (property "ki_keywords" "connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+      (property "ki_description" "Generic connector, single row, 01x02, script generated" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Conn_01x02_Female_1_1"
+      (symbol "Conn_01x02_Socket_1_1"
         (arc (start 0 -2.032) (mid -0.5058 -2.54) (end 0 -3.048)
           (stroke (width 0.1524) (type default))
           (fill (type none))
@@ -661,7 +664,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+24V\"" (at 0 0 0)
@@ -713,7 +716,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
@@ -765,7 +768,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -793,6 +796,7 @@
       )
     )
   )
+
 
   (junction (at 86.36 88.9) (diameter 0) (color 0 0 0 0)
     (uuid 01df7382-dd70-4f1c-afac-378c65232d23)
@@ -1077,6 +1081,9 @@
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
           (reference "#PWR0104") (unit 1)
         )
+        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/15acb311-fc6d-4dca-ab5d-737ef8928bc0"
+          (reference "#PWR0104") (unit 1)
+        )
       )
     )
   )
@@ -1146,13 +1153,13 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x02_Female") (at 76.2 166.37 0) (unit 1)
+  (symbol (lib_id "Connector:Conn_01x02_Socket") (at 76.2 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2368e3e6-b300-4c46-b98f-b4c76e870f7e)
     (property "Reference" "J5" (at 78.74 166.37 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x02_Female" (at 87.63 168.91 0)
+    (property "Value" "Conn_01x02_Socket" (at 86.36 168.91 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" (at 76.2 166.37 0)
@@ -1201,7 +1208,7 @@
       )
       (project "24V_plc_integration_shield"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/15acb311-fc6d-4dca-ab5d-737ef8928bc0"
-          (reference "#PWR0116") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -1673,6 +1680,9 @@
       )
       (project "24V_plc_integration_shield"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+          (reference "C2") (unit 1)
+        )
+        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/15acb311-fc6d-4dca-ab5d-737ef8928bc0"
           (reference "C2") (unit 1)
         )
       )

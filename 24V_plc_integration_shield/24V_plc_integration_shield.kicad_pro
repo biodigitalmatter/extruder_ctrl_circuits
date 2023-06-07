@@ -56,14 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "silk_over_copper|111506000|74805000|a07b6b2b-7179-4297-b163-5e47ffbe76d3|2609107f-7351-46d6-94b6-871ef49beff7",
-        "silk_over_copper|111506000|87425000|a07b6b2b-7179-4297-b163-5e47ffbe76d3|e4793b0e-b919-45ba-a498-02456427e67e",
-        "silk_over_copper|128752000|74930000|5bbde4f9-fcdb-4d27-a2d6-3847fcdd87ba|da337fe1-c322-4637-ad26-2622b82ac8ee",
-        "silk_overlap|128752000|73698567|5bbde4f9-fcdb-4d27-a2d6-3847fcdd87ba|8765371a-21c2-4fe3-a3af-88f5eb1f02a0",
-        "silk_overlap|128752000|74930000|5bbde4f9-fcdb-4d27-a2d6-3847fcdd87ba|da337fe1-c322-4637-ad26-2622b82ac8ee",
-        "silk_overlap|128752000|75752526|5bbde4f9-fcdb-4d27-a2d6-3847fcdd87ba|8765371a-21c2-4fe3-a3af-88f5eb1f02a0"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -411,7 +404,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "24V_plc_integration_shield"
+    ]
   },
   "meta": {
     "filename": "24V_plc_integration_shield.kicad_pro",

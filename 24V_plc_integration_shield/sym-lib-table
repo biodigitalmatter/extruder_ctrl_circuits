@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name "project")(type "KiCad")(uri "${KIPRJMOD}/project.kicad_sym")(options "")(descr ""))
+  (version 7)
+  (lib (name "24V_plc_integration_shield")(type "KiCad")(uri "${KIPRJMOD}/24V_plc_integration_shield.kicad_sym")(options "")(descr ""))
 )

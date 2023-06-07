@@ -232,7 +232,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
@@ -284,7 +284,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -429,7 +429,7 @@
           (reference "R5") (unit 1)
         )
         (path "/1aafabe6-4a1f-46bf-9f81-c940a24627ea/14f65769-aed9-4f66-8c4a-d110fa3588aa/00000000-0000-0000-0000-00006186bf69"
-          (reference "R5") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
       (project "24V_plc_integration_shield"
