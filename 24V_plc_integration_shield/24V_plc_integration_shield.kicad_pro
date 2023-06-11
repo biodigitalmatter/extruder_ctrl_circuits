@@ -56,7 +56,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_overlap|128752000|74930000|5bbde4f9-fcdb-4d27-a2d6-3847fcdd87ba|da337fe1-c322-4637-ad26-2622b82ac8ee"
+      ],
       "meta": {
         "version": 2
       },
@@ -395,7 +397,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
